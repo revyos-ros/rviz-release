@@ -87,7 +87,7 @@ class VisualizationManagerPrivate;
  * The "protected" members should probably all be "private", as
  * VisualizationManager is not intended to be subclassed.
  */
-class RVIZ_COMMON_PUBLIC VisualizationManager : public DisplayContext
+class VisualizationManager : public DisplayContext
 {
   Q_OBJECT
 
@@ -251,6 +251,13 @@ public:
 
   ros_integration::RosNodeAbstractionIface::WeakPtr getRosNodeAbstraction() const override;
 
+#if 0
+  /**
+   * @brief Return a CallbackQueue using a different thread than the main GUI one.
+   */
+  ros::CallbackQueueInterface * getThreadedQueue();
+#endif
+
   /// Return the FrameManager instance.
   FrameManagerIface * getFrameManager() const override;
 
@@ -309,6 +316,9 @@ Q_SIGNALS:
   /// Emitted during file-loading and initialization to indicate progress.
   void statusUpdate(const QString & message);
 
+  /// Emmited when ESC key is pressed
+  void escapePressed();
+
 protected Q_SLOTS:
   /// Call update() on all managed objects.
   /**
@@ -331,6 +341,8 @@ protected:
   void updateTime();
 
   void updateFrames();
+
+  void threadedQueueThreadFunc();
 
   /// Ogre Root.
   Ogre::Root * ogre_root_;
