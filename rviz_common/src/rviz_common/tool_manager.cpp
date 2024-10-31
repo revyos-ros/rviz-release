@@ -157,7 +157,6 @@ void ToolManager::handleChar(QKeyEvent * event, RenderPanel * panel)
     tool = shortkey_to_tool_map_[event->key()];
   }
 
-  int flags = 0;
   if (tool) {
     // if there is a incoming tool check if it matches the current tool
     if (current_tool_ == tool) {
@@ -167,7 +166,7 @@ void ToolManager::handleChar(QKeyEvent * event, RenderPanel * panel)
       // if no, check if the current tool accesses all key events
       if (current_tool_->accessAllKeys()) {
         // if yes, pass the key
-        flags = current_tool_->processKeyEvent(event, panel);
+        current_tool_->processKeyEvent(event, panel);
       } else {
         // if no, switch the tool
         setCurrentTool(tool);
@@ -176,11 +175,7 @@ void ToolManager::handleChar(QKeyEvent * event, RenderPanel * panel)
   } else {
     // if the incoming key triggers no other tool,
     // just hand down the key event
-    flags = current_tool_->processKeyEvent(event, panel);
-  }
-
-  if (flags & Tool::Finished) {
-    setCurrentTool(getDefaultTool());
+    current_tool_->processKeyEvent(event, panel);
   }
 }
 
