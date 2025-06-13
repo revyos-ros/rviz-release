@@ -2,6 +2,29 @@
 Changelog for package rviz_default_plugins
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+14.1.11 (2025-05-14)
+--------------------
+* Backported FrameAligned camera (`#1453 <https://github.com/ros2/rviz/issues/1453>`_) (`#1459 <https://github.com/ros2/rviz/issues/1459>`_)
+* Do not use ${Qt5Widgets_INCLUDE_DIRS} to avoid creating non-relocatable config files (backport `#1450 <https://github.com/ros2/rviz/issues/1450>`_) (`#1452 <https://github.com/ros2/rviz/issues/1452>`_)
+* Contributors: mergify[bot]
+
+14.1.10 (2025-04-29)
+--------------------
+* PointCloudDisplay: Fix decay time 0 keeping more than the last message. (`#1400 <https://github.com/ros2/rviz/issues/1400>`_) (`#1432 <https://github.com/ros2/rviz/issues/1432>`_)
+  (cherry picked from commit 68c764528a5910c56e0bda683bbd3feacf5f9e89)
+  Co-authored-by: Stefan Fabian <fabian@sim.tu-darmstadt.de>
+* Contributors: mergify[bot]
+
+14.1.9 (2025-04-24)
+-------------------
+
+14.1.8 (2025-04-02)
+-------------------
+* fix: add rclcpp::shutdown (`#1343 <https://github.com/ros2/rviz/issues/1343>`_) (`#1344 <https://github.com/ros2/rviz/issues/1344>`_)
+  (cherry picked from commit dcbcdd6cf483acf7682414f25cbad32670622dfc)
+  Co-authored-by: Yuyuan Yuan <az6980522@gmail.com>
+* Contributors: mergify[bot]
+
 14.1.7 (2025-01-14)
 -------------------
 
