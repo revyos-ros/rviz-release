@@ -2,6 +2,28 @@
 Changelog for package rviz_assimp_vendor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+14.1.11 (2025-05-14)
+--------------------
+
+14.1.10 (2025-04-29)
+--------------------
+* Clean ogre CMakeLists.txt (`#1251 <https://github.com/ros2/rviz/issues/1251>`_) (`#1446 <https://github.com/ros2/rviz/issues/1446>`_)
+  Assimp version always greater than 5.0.1.
+  # https://github.com/ros2/rviz/issues/524
+  #   https://bugs.launchpad.net/ubuntu/+source/assimp/+bug/1869405
+  set(ON 1)
+  Remove after full revert commit 5f896af.
+  (cherry picked from commit b0b9d42902ebf74f208ec7687cba3b864fafc0fc)
+  Co-authored-by: mosfet80 <realeandrea@yahoo.it>
+  Co-authored-by: Alejandro Hernandez Cordero <ahcorde@gmail.com>
+* Contributors: mergify[bot]
+
+14.1.9 (2025-04-24)
+-------------------
+
+14.1.8 (2025-04-02)
+-------------------
+
 14.1.7 (2025-01-14)
 -------------------
 
