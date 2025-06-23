@@ -1,3 +1,34 @@
+## rviz (humble) - 11.2.18-1
+
+The packages in the `rviz` repository were released into the `humble` distro by running `/root/venv/bin/bloom-release -r humble rviz --override-release-repository-push-url git@github.com:revyos-ros/rviz-release.git` on `Mon, 23 Jun 2025 08:48:56 -0000`
+
+These packages were released:
+- `rviz2`
+- `rviz_assimp_vendor`
+- `rviz_common`
+- `rviz_default_plugins`
+- `rviz_ogre_vendor`
+- `rviz_rendering`
+- `rviz_rendering_tests`
+- `rviz_visual_testing_framework`
+
+Version of package(s) in repository `rviz`:
+
+- upstream repository: https://github.com/ros2/rviz.git
+- release repository: https://github.com/revyos-ros/rviz-release.git
+- rosdistro version: `11.2.17-1`
+- old version: `11.2.16-1`
+- new version: `11.2.18-1`
+
+Versions of tools used:
+
+- bloom version: `0.12.0`
+- catkin_pkg version: `1.0.0`
+- rosdep version: `0.25.1`
+- rosdistro version: `1.0.1`
+- vcstools version: `0.1.42`
+
+
 ## rviz (jazzy) - 14.1.11-1
 
 The packages in the `rviz` repository were released into the `jazzy` distro by running `/home/z572/gits/revyos-ros/venv/bin/bloom-release -r jazzy rviz --override-release-repository-push-url git@github.com:revyos-ros/rviz-release.git` on `Fri, 13 Jun 2025 03:20:35 -0000`
