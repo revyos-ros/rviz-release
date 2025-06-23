@@ -2,6 +2,18 @@
 Changelog for package rviz_default_plugins
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+11.2.18 (2025-06-20)
+--------------------
+* Frame view controller: Removed warnings (`#1470 <https://github.com/ros2/rviz/issues/1470>`_) (`#1478 <https://github.com/ros2/rviz/issues/1478>`_)
+* PointStampedDisplay: Ignore incoming messages if disabled (`#1036 <https://github.com/ros2/rviz/issues/1036>`_) (`#1467 <https://github.com/ros2/rviz/issues/1467>`_)
+* Contributors: mergify[bot]
+
+11.2.17 (2025-05-14)
+--------------------
+* Backported FrameAligned camera (backport `#1453 <https://github.com/ros2/rviz/issues/1453>`_) (`#1460 <https://github.com/ros2/rviz/issues/1460>`_)
+* PointCloudDisplay: Fix decay time 0 keeping more than the last message. (`#1400 <https://github.com/ros2/rviz/issues/1400>`_) (`#1433 <https://github.com/ros2/rviz/issues/1433>`_)
+* Contributors: mergify[bot]
+
 11.2.16 (2025-01-14)
 --------------------
 
